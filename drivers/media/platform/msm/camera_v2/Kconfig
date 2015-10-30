@@ -110,6 +110,12 @@ config S5K3L1YX
 		snapshot config = 4000 * 3000 at 20 fps,
 		hfr video at 60, 90 and 120 fps.
 
+config BU64241_ACT
+	bool "Actuator BU64241 for S5K4H5YB (BAYER 8M)"
+	depends on MSMB_CAMERA
+	---help---
+	Actuator for Samsung 8 MP Bayer Sensor
+
 config IMX135
 	bool "Sensor IMX135 (BAYER 12M)"
 	depends on MSMB_CAMERA
