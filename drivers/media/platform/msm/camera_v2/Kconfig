@@ -110,6 +110,22 @@ config S5K3L1YX
 		snapshot config = 4000 * 3000 at 20 fps,
 		hfr video at 60, 90 and 120 fps.
 
+config S5K4H5YB
+	bool "Sensor S5K4H5YB (BAYER 8M)"
+	depends on MSMB_CAMERA
+	---help---
+		Samsung 8 MP Bayer Sensor with auto focus, uses
+		4 mipi lanes, preview config = 2104 x 1560 at 49 fps,
+		snapshot config = 3264 x 2448 at 30 fps.
+
+config S5K8AAYX
+	bool "Sensor S5K8AAYX (YUV 1.2)"
+	depends on MSMB_CAMERA
+	---help---
+		Samsung 1.2 MP YUV Sensor
+		2 mipi lanes, preview config = 1280 x 960 at 30 fps,
+		snapshot config = 1280 x 960 at 30 fps,
+
 config BU64241_ACT
 	bool "Actuator BU64241 for S5K4H5YB (BAYER 8M)"
 	depends on MSMB_CAMERA
