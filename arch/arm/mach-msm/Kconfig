@@ -3059,4 +3059,29 @@ config KRAIT_REGULATOR
 	 line from the PMIC. This supply line is powered by multiple
 	 regulators running in ganged mode inside the PMIC. Enable
 	 this option to support such configurations.
+
+config PERFLOCK
+	bool "HTC Performance Lock"
+	default n
+
+config SHSYS_CUST_PERFLOCK
+	bool "SHARP Performance Lock"
+	depends on PERFLOCK
+	default n
+
+config PERFLOCK_BOOT_LOCK
+	bool "Boot Time Performance Lock"
+	depends on PERFLOCK
+	default n
+
+config PERFLOCK_SUSPEND_LOCK
+	bool "Suspend Time Performance Lock"
+	depends on PERFLOCK
+	default n
+
+config SHSYS_CUST_USER_PERFLOCK
+	bool "Perflock User"
+	depends on PERFLOCK
+	default n
+
 endif
